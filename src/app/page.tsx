@@ -1,3 +1,4 @@
+import { MigrateButton } from "@/components/migrateButton";
 import { TableRow } from "@/components/tableRow";
 import { dummyData } from "@/consts/dummyData";
 
@@ -48,6 +49,7 @@ export default function Home() {
           </tbody>
         </table>
       </div>
+      <MigrateButton dummyData={dummyData} />
     </div>
   );
 }
