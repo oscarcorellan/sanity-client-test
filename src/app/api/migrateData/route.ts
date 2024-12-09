@@ -1,9 +1,9 @@
+import { NextResponse } from "next/server";
 import { client } from "@/sanity/lib/client";
-import type { NextApiResponse } from "next";
 
 import { dummyData } from "@/consts/dummyData";
 
-export async function POST(res: NextApiResponse) {
+export async function POST() {
   const transaction = client.transaction();
 
   dummyData.forEach((frame) => {
@@ -23,5 +23,8 @@ export async function POST(res: NextApiResponse) {
   });
 
   await transaction.commit();
-  res.status(200).json({ message: "Data migrated successfully" });
+  return NextResponse.json(
+    { message: "Data migrated successfully" },
+    { status: 200 }
+  );
 }
