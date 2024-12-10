@@ -1,30 +1,37 @@
 import { NextResponse } from "next/server";
 import { client } from "@/sanity/lib/client";
 
-import { dummyData } from "@/consts/dummyData";
+export async function POST(req: Request) {
+  try {
+    const { dummyData } = await req.json();
 
-export async function POST() {
-  const transaction = client.transaction();
+    if (!Array.isArray(dummyData) || dummyData.length === 0) {
+      return NextResponse.json(
+        { message: "Invalid data provided" },
+        { status: 400 }
+      );
+    }
 
-  dummyData.forEach((frame) => {
-    transaction.create({
-      _type: "frame",
-      _id: frame.id.toString(),
-      name: frame.name,
-      material: frame.material,
-      shape: frame.shape,
-      size: frame.size,
-      color: frame.color,
-      gender: frame.gender,
-      brand: frame.brand,
-      price: frame.price,
-      availability: frame.availability,
+    const transaction = client.transaction();
+
+    dummyData.forEach((frame) => {
+      transaction.create({
+        _type: "frame",
+        _id: frame.id.toString(),
+        ...frame,
+      });
     });
-  });
 
-  await transaction.commit();
-  return NextResponse.json(
-    { message: "Data migrated successfully" },
-    { status: 200 }
-  );
+    await transaction.commit();
+    return NextResponse.json(
+      { message: "Data migrated successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Migration error:", error);
+    return NextResponse.json(
+      { message: "Failed to migrate data" },
+      { status: 500 }
+    );
+  }
 }

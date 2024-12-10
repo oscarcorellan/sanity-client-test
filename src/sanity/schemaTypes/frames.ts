@@ -5,7 +5,6 @@ export const frame = defineType({
   title: "Frame",
   type: "document",
   fields: [
-    { name: "id", title: "ID", type: "number" },
     { name: "name", title: "Name", type: "string" },
     { name: "material", title: "Material", type: "string" },
     { name: "shape", title: "Shape", type: "string" },
