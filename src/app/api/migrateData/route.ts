@@ -15,9 +15,9 @@ export async function POST(req: Request) {
     const transaction = client.transaction();
 
     dummyData.forEach((frame) => {
-      transaction.create({
+      transaction.createOrReplace({
         _type: "frame",
-        _id: frame.id.toString(),
+        _id: frame.entityId,
         ...frame,
       });
     });

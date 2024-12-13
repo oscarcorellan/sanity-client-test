@@ -1,3 +1,6 @@
+import { MigrateButton } from "@/components/migrateButton";
+import { AccessoriesData } from "@/consts/dummyData";
+
 const AccessoriesPage = () => {
   return (
     <div className="min-h-screen p-8 sm:p-20 bg-gray-50 dark:bg-gray-900">
@@ -28,9 +31,36 @@ const AccessoriesPage = () => {
               </th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            {AccessoriesData.map((accessory) => (
+              <tr
+                key={accessory.entityId}
+                className="border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200"
+              >
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.id}
+                </td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.name}
+                </td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.description}
+                </td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.price.toFixed(2)}
+                </td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.availability ? "Available" : "Unavailable"}
+                </td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+                  {accessory.legacyId}
+                </td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
+      <MigrateButton dummyData={AccessoriesData} />
     </div>
   );
 };

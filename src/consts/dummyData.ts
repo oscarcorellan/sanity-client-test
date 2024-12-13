@@ -1,6 +1,8 @@
 export const FramesData = [
   {
     id: "1",
+    legacyId: "LEG1",
+    entityId: "ENT1",
     name: "Frame 1",
     material: "Wood",
     materialDescription: "High-quality oak wood",
@@ -14,6 +16,8 @@ export const FramesData = [
   },
   {
     id: "2",
+    legacyId: "LEG2",
+    entityId: "ENT2",
     name: "Frame 2",
     material: "Metal",
     materialDescription: "Durable stainless steel",
@@ -27,6 +31,8 @@ export const FramesData = [
   },
   {
     id: "3",
+    legacyId: "LEG3",
+    entityId: "ENT3",
     name: "Frame 3",
     material: "Plastic",
     materialDescription: "Lightweight high-grade plastic",
@@ -40,6 +46,8 @@ export const FramesData = [
   },
   {
     id: "4",
+    legacyId: "LEG4",
+    entityId: "ENT4",
     name: "Frame 4",
     material: "Composite",
     materialDescription: "Hybrid of wood and plastic for durability",
@@ -53,6 +61,8 @@ export const FramesData = [
   },
   {
     id: "5",
+    legacyId: "LEG5",
+    entityId: "ENT5",
     name: "Frame 5",
     material: "Titanium",
     materialDescription: "Ultra-light and strong titanium",

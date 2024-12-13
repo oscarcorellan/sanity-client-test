@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import type { Frame } from "@/types/data";
+import type { Accesory, Frame } from "@/types/data";
 
 type MigrateButtonProps = {
-  dummyData: Frame[];
+  dummyData: Frame[] | Accesory[];
 };
 
 export const MigrateButton = ({ dummyData }: MigrateButtonProps) => {
@@ -16,7 +16,7 @@ export const MigrateButton = ({ dummyData }: MigrateButtonProps) => {
     setMigrationStatus(null);
 
     try {
-      const response = await fetch("/api/migrateData", {
+      const response = await fetch("/api/migrateAccessoriesData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
