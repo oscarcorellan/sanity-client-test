@@ -9,11 +9,11 @@ export const TableRow = ({ dummyData }: TableRowProps) => {
     <>
       {dummyData.map((frame) => (
         <tr
-          key={frame.id}
+          key={frame.entityId}
           className="even:bg-gray-100 dark:even:bg-gray-800 text-gray-800 dark:text-gray-200"
         >
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2 text-center">
-            {frame.id}
+            {frame.entityId}
           </td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
             {frame.name}
