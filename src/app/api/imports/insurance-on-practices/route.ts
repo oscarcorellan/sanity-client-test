@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { insuranceOnPractices } from "@/consts";
 
-export async function POST() {
+export async function GET() {
   const transaction = client.transaction();
 
   insuranceOnPractices.forEach((item) => {

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { displayOnPractices } from "@/consts";
 
-export async function POST() {
+export async function GET() {
   const transaction = client.transaction();
 
   displayOnPractices.forEach((item) => {
