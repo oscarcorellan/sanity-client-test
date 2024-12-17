@@ -7,6 +7,7 @@ import { practices } from "./practices";
 import { offeringOnPractices } from "./offeringOnPractices";
 import { displayOnPractices } from "./displayOnPractices";
 import { insuranceOnPractices } from "./insuranceOnPractices";
+import { insurances } from "./insurances";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -15,6 +16,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     practices,
     offerings,
     displays,
+    insurances,
     offeringOnPractices,
     displayOnPractices,
     insuranceOnPractices,
