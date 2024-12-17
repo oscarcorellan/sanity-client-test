@@ -1,0 +1,98 @@
+export const insurances = [
+  {
+    id: 867,
+    name: "Medicare",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2023-01-24T20:30:57.809Z",
+  },
+  {
+    id: 868,
+    name: "Eyemed (Humana Vision)",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 869,
+    name: "Aetna",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 870,
+    name: "Others",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 871,
+    name: "United Healthcare",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 872,
+    name: "Spectera (UHC Vision)",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 873,
+    name: "In Network with HMO Plans",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 874,
+    name: "Blue Cross Blue Shield",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 875,
+    name: "Humana",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 876,
+    name: "VSP",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 877,
+    name: "In Network with PPO Plans",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 878,
+    name: "Davis (Versant)",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 879,
+    name: "Superior (Versant)",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 880,
+    name: "Solstice (Versant)",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 881,
+    name: "In Network with Open Access Plans",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+  {
+    id: 882,
+    name: "Cigna",
+    createdAt: "2022-10-17T13:34:33.754Z",
+    updatedAt: "2022-10-17T13:34:33.756Z",
+  },
+];
