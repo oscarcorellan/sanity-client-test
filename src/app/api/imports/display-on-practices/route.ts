@@ -10,6 +10,7 @@ export async function GET() {
     transaction.createOrReplace({
       _type: "displayOnPractices",
       _id: `${item.practiceId}-${item.displayId}`,
+      title: `${item.practiceId}-${item.displayId}`,
       practiceId: {
         _type: "reference",
         _ref: item.practiceId.toString(),

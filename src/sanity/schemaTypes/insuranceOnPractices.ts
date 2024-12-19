@@ -6,6 +6,11 @@ export const insuranceOnPractices = defineType({
   type: "document",
   fields: [
     {
+      name: "title",
+      title: "Title",
+      type: "string",
+    },
+    {
       name: "practiceId",
       title: "Practice",
       type: "reference",
